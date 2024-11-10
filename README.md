@@ -1,5 +1,5 @@
 # EE463-Drive-and-Survive
-Hardware design project repository of Drive &amp; Survive. n/
-Mustafa Berkay Kebabcı n/
-Orhun Bera Gedik n/
-Sefer İdacı
+Hardware design project repository of Drive &amp; Survive. <br />
+Mustafa Berkay Kebabcı <br />
+Orhun Bera Gedik <br />
+Sefer İdacı <br />
