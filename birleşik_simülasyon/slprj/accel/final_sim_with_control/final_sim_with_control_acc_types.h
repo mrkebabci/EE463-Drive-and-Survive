@@ -1,0 +1,4 @@
+#ifndef final_sim_with_control_acc_types_h_
+#define final_sim_with_control_acc_types_h_
+typedef struct P_final_sim_with_control_T_ P_final_sim_with_control_T ;
+#endif
