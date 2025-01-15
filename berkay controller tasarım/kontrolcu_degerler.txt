@@ -1,0 +1,9 @@
+Tasarım 1
+1/10 Akım Transducer
+
+Speed Control
+P = 6.678e-6
+I = 6.678e-6
+
+Akım Control
+P = 0.223
