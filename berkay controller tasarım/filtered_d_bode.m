@@ -2,7 +2,7 @@ close all
 
 D = 2.2;
 N = 5;
-w_crit = 1/N
+w_crit = N
 H = tf([D , 0],[1/N , 1])
 
 subplot(1,1,1)

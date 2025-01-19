@@ -54,8 +54,8 @@ Plecs {
   ScriptsDialogSplitterPos "0"
   Schematic {
     Location      [0, 23; 2560, 1357]
-    ZoomFactor    1.49863
-    SliderPosition [0, 0]
+    ZoomFactor    2.57013
+    SliderPosition [1515, 770]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -859,11 +859,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [447, 279; 2154, 1193]
+      Location      [447, 279; 2154, 1202]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAANEA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAoBAAABQfw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAACgEAAABEAP///wAABqsAAANzAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAAAACgEAAABEAP///wAABqsAAAN8AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -877,7 +877,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -1543,12 +1543,12 @@ Plecs {
       }
       Parameter {
         Variable      "kp"
-        Value         "0"
+        Value         "0.0420774226274095"
         Show          off
       }
       Parameter {
         Variable      "ki"
-        Value         "0.28994889807594"
+        Value         "0.289459983376386"
         Show          off
       }
       Parameter {
@@ -1588,12 +1588,12 @@ Plecs {
       }
       Parameter {
         Variable      "up_limit"
-        Value         "inf"
+        Value         "560"
         Show          off
       }
       Parameter {
         Variable      "low_limit"
-        Value         "-inf"
+        Value         "-560"
         Show          off
       }
       Parameter {
@@ -1942,11 +1942,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [1, 31; 1279, 1387]
+      Location      [984, 57; 2262, 1449]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAFkA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABEAP///wAABP4AAAUtAAAA"
+"///wAAAGMA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABjAP///wAAAAMAAAT+AAAAg/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABP4AAABEAP///wAABP4AAATIAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2166,7 +2166,7 @@ Plecs {
       }
       Parameter {
         Variable      "kd"
-        Value         "2"
+        Value         "1"
         Show          off
       }
       Parameter {
@@ -2829,14 +2829,6 @@ Plecs {
       }
     }
     Connection {
-      Type          Rotational
-      SrcComponent  "Torque2"
-      SrcTerminal   1
-      Points        [1065, 545; 1190, 545; 1190, 465]
-      DstComponent  "DC Machine"
-      DstTerminal   5
-    }
-    Connection {
       Type          Signal
       SrcComponent  "Step"
       SrcTerminal   1
@@ -2904,6 +2896,14 @@ Plecs {
         DstComponent  "Continuous PID\nController"
         DstTerminal   1
       }
+    }
+    Connection {
+      Type          Rotational
+      SrcComponent  "Torque2"
+      SrcTerminal   1
+      Points        [1205, 575; 1205, 455; 1190, 455; 1190, 465]
+      DstComponent  "DC Machine"
+      DstTerminal   5
     }
     Annotation {
       Name          "<html><body>\n<p>Armature Current</p></body></html>"
