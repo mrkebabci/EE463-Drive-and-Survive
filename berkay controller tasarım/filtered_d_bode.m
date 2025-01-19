@@ -1,7 +1,7 @@
 close all
 
-D = 2.2;
-N = 5;
+D = 2;
+N = 6;
 w_crit = N
 H = tf([D , 0],[1/N , 1])
 
